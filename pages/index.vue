@@ -39,7 +39,7 @@ export default {
       var formData = new FormData();
       formData.append("file", this.file);
       this.$axios
-        .$post("http://167.172.132.120:8000/document", formData, {
+        .$post("https://api.dochub.com.br/document", formData, {
           headers: {
             "Content-Type": "multipart/form-data"
           }
